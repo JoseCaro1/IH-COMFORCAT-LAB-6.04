@@ -1,0 +1,9 @@
+<h3 (click)="isShowed=!isShowed">{{employee.name}}</h3>
+<button (click)="removeEmployee()">Remove</button>
+<div *ngIf="isShowed">
+
+<h5>{{employee.phoneNumber}}</h5>
+<h5>{{employee.officeNumber}}</h5>
+<h5>{{employee.position}}</h5>
+<h5>{{employee.manager}}</h5>
+</div>
